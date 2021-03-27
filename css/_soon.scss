@@ -1,0 +1,23 @@
+.container-soon {
+    height: 55vh;
+    @include background-img('../img/bg2.jpg');
+    text-align: center;
+    align-items: center;
+
+    @include tablet {
+        height: 60vh;
+    }
+
+    @include desktop {
+        height: 75vh;
+    }
+
+    h3 {
+        @include quote-text(center, 3rem, .5rem, 0 0 30px);
+    }
+
+    i {
+        font-size: 3rem;
+        color: darken($button-bg, 25%);
+    }
+}

@@ -1,0 +1,101 @@
+.about-banner {
+    @include background-img('../img/bg5.jpg');
+    @include boxSize(100%, 100px);
+    background-position: 20% 10%;
+    @include flexBox(row, center, center);
+    margin-bottom: 20px;
+
+    box-shadow: 4px 4px 5px black;
+
+    .about-banner__text {
+
+        h2 {
+            color: $text-color;
+            text-shadow: 3px 3px 5px black;
+            text-transform: uppercase;
+            word-spacing: .5rem;
+        }
+    }
+
+    @include tablet {
+        @include boxSize(100%, 200px);
+
+        h2 {
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.about-section {
+    padding: 20px;
+
+    @include tablet {
+        padding: 10px;
+    }
+
+    @include desktop {
+        padding: 30px 50px;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    .stuff {
+        margin-bottom: 50px;
+        @include boxSize(100%, 300px);
+
+        .stuff-photo {
+            @include boxSize(80%, 200px);
+            margin: 0 auto 20px;
+            position: absolute;
+
+            img {
+                @include boxSize(100%, 100%);
+                object-fit: cover;
+                border: 1px solid;
+            }
+        }
+
+        .description {
+            @include boxSize(80%, 160px);
+            margin: 0 auto 20px;
+            background: lighten($button-bg, 15%);
+            padding: 15px;
+            box-shadow: 0 0 5px black;
+            @include boxPosition(relative, 50%, 10%);
+
+            p {
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+@include desktop {
+    .philosophy {
+        margin-top: -20px;
+        border-left: 1px solid;
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        p, li {
+            font-size: .8rem;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.cars-container {
+    @include background-img('../img/bg3.jpg');
+
+    h1 {
+        @include text-format(center, 3rem 0, white, bold);
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        @include text-format(center, 3rem 0, white, bold);
+        text-shadow: 3px 3px 5px black;
+    }
+
+    .cars-item {
+
+        .cars-item__content {
+            background: rgba(233, 212, 192, .5);
+            box-shadow: 3px 3px 8px black;
+
+            .container-hover {
+                position: relative;
+                cursor: pointer;
+
+                .cars-item__img {
+                    @include boxSize(100%, 100%);
+                    object-fit: cover;
+                    object-position: 30% 0;
+                    border-bottom: 1px solid #2F3717;
+                    padding: 10px;
+                    transition: .5s ease;
+                    opacity: 1;
+                    backface-visibility: hidden;
+                }
+
+                .plus {
+                    transition: .5s ease;
+                    opacity: 0;
+                    @include boxPosition(absolute, 50%, 50%);
+                    @include boxSize(100%, 100%);
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    background: beige;
+
+                    i {
+                        font-size: 4rem;
+                        color: black;
+                        @include boxPosition(relative, 50%, 0);
+                        transform: translateY(-50%);
+                    }
+                }
+
+                &:hover .cars-item__img {
+                    opacity: .3;
+                }
+
+                &:hover .plus {
+                    opacity: .5;
+                }
+            }
+
+            .cars-item__text {
+                margin: 20px 0;
+                padding: 10px 30px;
+                height: 250px;
+
+                h4 {
+                    margin-bottom: 20px;
+                }
+
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        margin-bottom: 10px;
+
+                        .cars-item__logo {
+                            @include boxSize(100px, 40px);
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* modal */
+    .modal-body-scroll {
+        height: 70vh;
+        overflow-y: scroll;
+        background: lighten(#CFB695, 10%);
+
+        .modal-picture {
+            object-fit: cover;
+        }
+    }
+
+    .cars-item__resources {
+        @include flexBox(column, center, center);
+
+        @include desktop {
+            @include flexBox(row, space-between, start);
+        }
+    }
+}

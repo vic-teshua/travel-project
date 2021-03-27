@@ -1,0 +1,58 @@
+@mixin text-format($align, $margin, $color, $weight) {
+    text-align: $align;
+    margin: $margin;
+    color: $color;
+    font-weight: $weight;
+}
+
+@mixin boxSize($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin flexBox($direction, $jc, $ai) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin boxPosition($posit, $top, $left) {
+    position: $posit;
+    top: $top;
+    left: $left;
+}
+
+@mixin colorOpacity($color, $opacity) {
+    color: $color;
+    opacity: $opacity;
+}
+
+@mixin background-img($url) {
+    background: url($url) center center no-repeat;
+    background-size: cover;
+}
+
+@mixin quote-text($align, $size, $spacing: 0, $padding: 0) {
+    text-align: $align;
+    font-size: $size;
+    letter-spacing: $spacing;
+    padding: $padding;    
+}
+
+// for contact form
+@mixin epic-sides() {
+    // https://codepen.io/MichaelArestad/pen/qltuk
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        content: "";
+        display: block;
+        @include boxPosition(absolute, 0, -5000px);
+        @include boxSize(15000px, 100%);
+        z-index: -1;
+        @content;
+    }
+}
+

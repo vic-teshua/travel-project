@@ -1,0 +1,45 @@
+.container-routes {
+    padding: 30px 30px 100px;
+    @include background-img("../img/bg2.jpg");
+    text-align: center;
+
+    .routes {
+
+        @include desktop {
+            width: 80%;
+            margin: auto;
+        }
+
+        iframe {
+            margin-top: 20px;
+            @include boxSize(90%, 250px);
+            margin-bottom: 30px;
+            box-shadow: 3px 3px 5px black;
+        }
+
+        .routes-content {
+            padding: 30px;
+            background: rgba(255, 255, 255, .3);
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .routes-more {
+            margin: 30px 0;
+            background: rgba(255, 255, 255, .3);
+            height: 100px;
+
+            h3 {
+                text-transform: uppercase;
+                line-height: 100px;
+
+                i {
+                    margin: 0 10px;
+                    color: #2C3416;
+                }
+            }
+        }
+    }
+}

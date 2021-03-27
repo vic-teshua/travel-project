@@ -1,0 +1,25 @@
+// global
+$font-family-sans-serif: 'Piazzolla',
+serif;
+$text-color: white;
+$nav-color-text: #C9C183;
+$h1-font-size: 3rem;
+$h2-font-size: 2rem;
+
+
+// navigation
+$navbar-brand-font-size: 2rem;
+$navbar-dark-color: $text-color;
+$navbar-dark-active-color: $nav-color-text;
+$navbar-dark-hover-color: $nav-color-text;
+
+$dropdown-bg: #C2C1AF;
+$dropdown-link-hover-bg: darken(#C2C1AF, 10%);
+
+$navbar-dark-toggler-icon-bg: url("../img/menu-icon3-rotated.svg");
+$navbar-dark-toggler-border-color: $nav-color-text;
+$navbar-toggler-font-size: 1.7rem;
+$bg-linear: linear-gradient(90deg, #171b0b, #505e28);
+
+// buttons
+$button-bg: #878973;

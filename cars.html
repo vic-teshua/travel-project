@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css link -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/b87e7cfa84.js" crossorigin="anonymous"></script>
+
+  <title>Car Travel | Cars</title>
+</head>
+
+<body>
+  <!-- navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark px-5 sticky-top">
+
+    <!-- logo -->
+    <a class="navbar-brand logo" href="index.html"><i class="fas fa-car-alt"></i> Car travel</a>
+
+    <!-- button ms -->
+    <button class="navbar-toggler icon-background" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- menu -->
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto position-media">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About us</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu dropdown-position" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="routes.html">Free routes</a>
+            <a class="dropdown-item" href="offers.html">Offers</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Tips
+          </a>
+          <div class="dropdown-menu dropdown-position" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item active" href="cars.html">Cars</a>
+            <a class="dropdown-item" href="gallery.html">Gallery</a>
+            <a class="dropdown-item" href="quote.html">Quotes</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact us <span class="sr-only">(current)</span></a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- main content -->
+  <div class="container-fluid pb-5 cars-container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Cars suitable for travel</h1>
+      </div>
+
+      <div class="col-12">
+        <h2>Cars for more comfortable trips</h2>
+      </div>
+
+      <!-- caravan -->
+      <div class="col-12 col-md-6 col-lg-4 cars-item">
+        <div class="cars-item__content">
+          <div class="container-hover">
+            <img src="./img/cars/caravan.jpg" class="cars-item__img" alt="">
+
+            <!-- trigger modal -->
+            <div class="plus" data-toggle="modal" data-target="#caravan">
+              <i class="fas fa-car-side"></i>
+            </div>
+          </div>
+
+          <div class="cars-item__text">
+            <h4>Caravan</h4>
+            <p>Have your own home on a journey or a vacation, without relying on a motel or hotel.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL card 1-->
+      <div class="modal fade" id="caravan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- modal-body -->
+            <div class="modal-body modal-body-scroll">
+              <div class="container p-5">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="section-title text-center mb-4">Caravan</h3>
+                  </div>
+
+                  <div class="col-12">
+                    <img src="./img/cars/caravan-inside.jpg" alt="..." width="100%" class="modal-pic mb-4">
+                  </div>
+
+                  <div class="col-12 text-left mb-4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nisi dignissimos aut iste quam?
+                      Quod a ipsa sint beatae? Impedit.</p>
+
+                    <p><b><i class="fas fa-user-friends mr-3"></i> Number of people</b>: 5 - 8 </p>
+                    <p><b><i class="fas fa-arrows-alt-h mr-3"></i> Width</b>: xx m </p>
+                    <p><b><i class="fas fa-arrows-alt-v mr-3"></i> Height</b>: xx m </p>
+
+                    <p><b><i class="fas fa-shower mr-3"></i> Shower & WC</b>: yes </p>
+
+                    <p><b><i class="fas fa-utensils mr-3"></i> Kitchen</b>: yes </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- modal-footer -->
+            <div class="modal-footer justify-content-center">
+              <button type="button" data-dismiss="modal" class="button border-0"><i class="fas fa-times mr-2"></i>
+                Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RV trailer -->
+      <div class="col-12 col-md-6 col-lg-4 cars-item">
+        <div class="cars-item__content">
+          <div class="container-hover">
+            <img src="./img/cars/wohnmobil.jpg" class="cars-item__img" alt="">
+
+            <!-- trigger modal -->
+            <div class="plus" data-toggle="modal" data-target="#trailer">
+              <i class="fas fa-car-side"></i>
+            </div>
+          </div>
+
+          <div class="cars-item__text">
+            <h4>RV Trailer</h4>
+            <p>Have your own home on a journey or a vacation, without relying on a motel or hotel.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL card 2-->
+      <div class="modal fade" id="trailer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- modal-body -->
+            <div class="modal-body modal-body-scroll">
+              <div class="container p-5">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="section-title text-center mb-4">RV Trailer</h3>
+                  </div>
+
+                  <div class="col-12">
+                    <img src="./img/cars/wohnkabine-inside.jpg" alt="..." width="100%" class="modal-pic mb-4">
+                  </div>
+
+                  <div class="col-12 text-left mb-4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nisi dignissimos aut iste quam?
+                      Quod a ipsa sint beatae? Impedit.</p>
+
+                    <p><b><i class="fas fa-user-friends mr-3"></i> Number of people</b>: 4 - 6 </p>
+                    <p><b><i class="fas fa-arrows-alt-h mr-3"></i> Width</b>: xx m </p>
+                    <p><b><i class="fas fa-arrows-alt-v mr-3"></i> Height</b>: xx m </p>
+
+                    <p><b><i class="fas fa-shower mr-3"></i> Shower & WC</b>: yes </p>
+
+                    <p><b><i class="fas fa-utensils mr-3"></i> Kitchen</b>: yes </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- modal-footer -->
+            <div class="modal-footer justify-content-center">
+              <button type="button" data-dismiss="modal" class="button border-0"><i class="fas fa-times mr-2"></i>
+                Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Van -->
+      <div class="col-12 col-md-6 col-lg-4 cars-item">
+        <div class="cars-item__content">
+          <div class="container-hover">
+            <img src="./img/cars/van.jpg" class="cars-item__img" alt="">
+
+            <!-- trigger modal -->
+            <div class="plus" data-toggle="modal" data-target="#van">
+              <i class="fas fa-car-side"></i>
+            </div>
+          </div>
+
+          <div class="cars-item__text">
+            <h4>Van</h4>
+            <p>Have your own home on a journey or a vacation, without relying on a motel or hotel.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL card 3-->
+      <div class="modal fade" id="van" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- modal-body -->
+            <div class="modal-body modal-body-scroll">
+              <div class="container p-5">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="section-title text-center mb-4">Van</h3>
+                  </div>
+
+                  <div class="col-12">
+                    <img src="./img/cars/van inside.jpg" alt="..." width="100%" class="modal-pic mb-4">
+                  </div>
+
+                  <div class="col-12 text-left mb-4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nisi dignissimos aut iste quam?
+                      Quod a ipsa sint beatae? Impedit.</p>
+
+                    <p><b><i class="fas fa-user-friends mr-3"></i> Number of people</b>: 2 - 4 </p>
+                    <p><b><i class="fas fa-arrows-alt-h mr-3"></i> Width</b>: xx m </p>
+                    <p><b><i class="fas fa-arrows-alt-v mr-3"></i> Height</b>: xx m </p>
+
+                    <p><b><i class="fas fa-shower mr-3"></i> Shower & WC</b>: no </p>
+
+                    <p><b><i class="fas fa-utensils mr-3"></i> Kitchen</b>: yes </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- modal-footer -->
+            <div class="modal-footer justify-content-center">
+              <button type="button" data-dismiss="modal" class="button border-0"><i class="fas fa-times mr-2"></i>
+                Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Truck Camper -->
+      <div class="col-12 col-md-6 col-lg-4 cars-item">
+        <div class="cars-item__content">
+          <div class="container-hover">
+            <img src="./img/cars/wohnkabine.jpg" class="cars-item__img" alt="">
+
+            <!-- trigger modal -->
+            <div class="plus" data-toggle="modal" data-target="#truck">
+              <i class="fas fa-car-side"></i>
+            </div>
+          </div>
+
+          <div class="cars-item__text">
+            <h4>Truck Camper</h4>
+            <p>Have your own home on a journey or a vacation, without relying on a motel or hotel.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL card 4-->
+      <div class="modal fade" id="truck" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- modal-body -->
+            <div class="modal-body modal-body-scroll">
+              <div class="container p-5">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="section-title text-center mb-4">Truck Camper</h3>
+                  </div>
+
+                  <div class="col-12">
+                    <img src="./img/cars/wohnkabine-inside.jpg" alt="..." width="100%" class="modal-pic mb-4">
+                  </div>
+
+                  <div class="col-12 text-left mb-4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nisi dignissimos aut iste quam?
+                      Quod a ipsa sint beatae? Impedit.</p>
+
+                    <p><b><i class="fas fa-user-friends mr-3"></i> Number of people</b>: 2 - 4 </p>
+                    <p><b><i class="fas fa-arrows-alt-h mr-3"></i> Width</b>: xx m </p>
+                    <p><b><i class="fas fa-arrows-alt-v mr-3"></i> Height</b>: xx m </p>
+
+                    <p><b><i class="fas fa-shower mr-3"></i> Shower & WC</b>: no </p>
+
+                    <p><b><i class="fas fa-utensils mr-3"></i> Kitchen</b>: yes </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- modal-footer -->
+            <div class="modal-footer justify-content-center">
+              <button type="button" data-dismiss="modal" class="button border-0"><i class="fas fa-times mr-2"></i>
+                Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Redesigned Van -->
+      <div class="col-12 col-md-6 col-lg-4 cars-item">
+        <div class="cars-item__content">
+          <div class="container-hover">
+            <img src="./img/cars/van-knaus.jpg" class="cars-item__img" alt="">
+
+            <!-- trigger modal -->
+            <div class="plus" data-toggle="modal" data-target="#rvan">
+              <i class="fas fa-car-side"></i>
+            </div>
+          </div>
+
+          <div class="cars-item__text">
+            <h4>Redesigned Van</h4>
+            <p>Have your own home on a journey or a vacation, without relying on a motel or hotel.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL card 5-->
+      <div class="modal fade" id="rvan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- modal-body -->
+            <div class="modal-body modal-body-scroll">
+              <div class="container p-5">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="section-title text-center mb-4">Redesigned Van</h3>
+                  </div>
+
+                  <div class="col-12">
+                    <img src="./img/cars/van inside.jpg" alt="..." width="100%" class="modal-pic mb-4">
+                  </div>
+
+                  <div class="col-12 text-left mb-4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nisi dignissimos aut iste quam?
+                      Quod a ipsa sint beatae? Impedit.</p>
+
+                    <p><b><i class="fas fa-user-friends mr-3"></i> Number of people</b>: 2 - 4 </p>
+                    <p><b><i class="fas fa-arrows-alt-h mr-3"></i> Width</b>: xx m </p>
+                    <p><b><i class="fas fa-arrows-alt-v mr-3"></i> Height</b>: xx m </p>
+
+                    <p><b><i class="fas fa-shower mr-3"></i> Shower & WC</b>: no </p>
+
+                    <p><b><i class="fas fa-utensils mr-3"></i> Kitchen</b>: yes </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- modal-footer -->
+            <div class="modal-footer justify-content-center">
+              <button type="button" data-dismiss="modal" class="button border-0"><i class="fas fa-times mr-2"></i>
+                Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Redesigned Bus -->
+      <div class="col-12 col-md-6 col-lg-4 cars-item">
+        <div class="cars-item__content">
+          <div class="container-hover">
+            <img src="./img/cars/bus.jpg" class="cars-item__img" alt="">
+
+            <!-- trigger modal -->
+            <div class="plus" data-toggle="modal" data-target="#rbus">
+              <i class="fas fa-car-side"></i>
+            </div>
+          </div>
+
+          <div class="cars-item__text">
+            <h4>Redesigned Bus</h4>
+            <p>Have your own home on a journey or a vacation, without relying on a motel or hotel.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL card 6-->
+      <div class="modal fade" id="rbus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- modal-body -->
+            <div class="modal-body modal-body-scroll">
+              <div class="container p-5">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="section-title text-center mb-4">Redesigned Bus</h3>
+                  </div>
+
+                  <div class="col-12">
+                    <img src="./img/cars/van inside.jpg" alt="..." width="100%" class="modal-pic mb-4">
+                  </div>
+
+                  <div class="col-12 text-left mb-4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nisi dignissimos aut iste quam?
+                      Quod a ipsa sint beatae? Impedit.</p>
+
+                    <p><b><i class="fas fa-user-friends mr-3"></i> Number of people</b>: 6 - 8 </p>
+                    <p><b><i class="fas fa-arrows-alt-h mr-3"></i> Width</b>: xx m </p>
+                    <p><b><i class="fas fa-arrows-alt-v mr-3"></i> Height</b>: xx m </p>
+
+                    <p><b><i class="fas fa-shower mr-3"></i> Shower & WC</b>: yes </p>
+
+                    <p><b><i class="fas fa-utensils mr-3"></i> Kitchen</b>: yes </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- modal-footer -->
+            <div class="modal-footer justify-content-center">
+              <button type="button" data-dismiss="modal" class="button border-0"><i class="fas fa-times mr-2"></i>
+                Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <h2>Cars for less comfortable trips</h2>
+      </div>
+
+      <!-- Ford Galaxy -->
+      <div class="col-12 col-md-6 col-lg-4 cars-item">
+        <div class="cars-item__content">
+          <div class="container-hover">
+            <img src="./img/cars/ford-galaxy.jpg" class="cars-item__img" alt="">
+
+            <!-- trigger modal -->
+            <div class="plus" data-toggle="modal" data-target="#fgalaxy">
+              <i class="fas fa-car-side"></i>
+            </div>
+          </div>
+
+          <div class="cars-item__text">
+            <h4>Ford Galaxy</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reiciendis, cum facilis quisquam
+              laboriosam aut est iusto cumque delectus necessitatibus?</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL card 1-->
+      <div class="modal fade" id="fgalaxy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- modal-body -->
+            <div class="modal-body modal-body-scroll">
+              <div class="container p-5">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="section-title text-center mb-4">Ford Galaxy</h3>
+                  </div>
+
+                  <div class="col-12">
+                    <img src="./img/cars/ford-mondeo-inside.jpeg" alt="..." width="100%" class="modal-pic mb-4">
+                  </div>
+
+                  <div class="col-12 text-left mb-4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nisi dignissimos aut iste quam?
+                      Quod a ipsa sint beatae? Impedit.</p>
+
+                    <p><b><i class="fas fa-user-friends mr-3"></i> Number of people</b>: 2 </p>
+                    <p><b><i class="fas fa-arrows-alt-h mr-3"></i> Width</b>: xx m </p>
+                    <p><b><i class="fas fa-arrows-alt-v mr-3"></i> Height</b>: xx m </p>
+
+                    <p><b><i class="fas fa-shower mr-3"></i> Shower & WC</b>: no </p>
+
+                    <p><b><i class="fas fa-utensils mr-3"></i> Kitchen</b>: no </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- modal-footer -->
+            <div class="modal-footer justify-content-center">
+              <button type="button" data-dismiss="modal" class="button border-0"><i class="fas fa-times mr-2"></i>
+                Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ford Mondeo -->
+      <div class="col-12 col-md-6 col-lg-4 cars-item">
+        <div class="cars-item__content">
+          <div class="container-hover">
+            <img src="./img/cars/Ford-mondeo.jpg" class="cars-item__img" alt="">
+
+            <!-- trigger modal -->
+            <div class="plus" data-toggle="modal" data-target="#fmondeo">
+              <i class="fas fa-car-side"></i>
+            </div>
+          </div>
+
+          <div class="cars-item__text">
+            <h4>Ford Mondeo</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi est necessitatibus ea qui distinctio,
+              repellat sequi ad aperiam doloremque itaque unde, alias eos? Asperiores exercitationem veritatis explicabo
+              ex voluptatum ducimus.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL card 2-->
+      <div class="modal fade" id="fmondeo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- modal-body -->
+            <div class="modal-body modal-body-scroll">
+              <div class="container p-5">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="section-title text-center mb-4">Ford Mondeo</h3>
+                  </div>
+
+                  <div class="col-12">
+                    <img src="./img/cars/ford-mondeo-inside.jpeg" alt="..." width="100%" class="modal-pic mb-4">
+                  </div>
+
+                  <div class="col-12 text-left mb-4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nisi dignissimos aut iste quam?
+                      Quod a ipsa sint beatae? Impedit.</p>
+
+                    <p><b><i class="fas fa-user-friends mr-3"></i> Number of people</b>: 2 </p>
+                    <p><b><i class="fas fa-arrows-alt-h mr-3"></i> Width</b>: xx m </p>
+                    <p><b><i class="fas fa-arrows-alt-v mr-3"></i> Height</b>: xx m </p>
+
+                    <p><b><i class="fas fa-shower mr-3"></i> Shower & WC</b>: no </p>
+
+                    <p><b><i class="fas fa-utensils mr-3"></i> Kitchen</b>: no </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- modal-footer -->
+            <div class="modal-footer justify-content-center">
+              <button type="button" data-dismiss="modal" class="button border-0"><i class="fas fa-times mr-2"></i>
+                Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Opel Zafira -->
+      <div class="col-12 col-md-6 col-lg-4 cars-item">
+        <div class="cars-item__content">
+          <div class="container-hover">
+            <img src="./img/cars/Opel-zafira.jpg" class="cars-item__img" alt="">
+
+            <!-- trigger modal -->
+            <div class="plus" data-toggle="modal" data-target="#zafira">
+              <i class="fas fa-car-side"></i>
+            </div>
+          </div>
+
+          <div class="cars-item__text">
+            <h4>Opel Zafira</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum, qui eligendi nesciunt voluptas
+              accusantium expedita at. Debitis, nisi libero.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL card 3-->
+      <div class="modal fade" id="zafira" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- modal-body -->
+            <div class="modal-body modal-body-scroll">
+              <div class="container p-5">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="section-title text-center mb-4">Opel Zafira</h3>
+                  </div>
+
+                  <div class="col-12">
+                    <img src="./img/cars/van inside.jpg" alt="..." width="100%" class="modal-pic mb-4">
+                  </div>
+
+                  <div class="col-12 text-left mb-4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nisi dignissimos aut iste quam?
+                      Quod a ipsa sint beatae? Impedit.</p>
+
+                    <p><b><i class="fas fa-user-friends mr-3"></i> Number of people</b>: 2 </p>
+                    <p><b><i class="fas fa-arrows-alt-h mr-3"></i> Width</b>: xx m </p>
+                    <p><b><i class="fas fa-arrows-alt-v mr-3"></i> Height</b>: xx m </p>
+
+                    <p><b><i class="fas fa-shower mr-3"></i> Shower & WC</b>: no </p>
+
+                    <p><b><i class="fas fa-utensils mr-3"></i> Kitchen</b>: no </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- modal-footer -->
+            <div class="modal-footer justify-content-center">
+              <button type="button" data-dismiss="modal" class="button border-0"><i class="fas fa-times mr-2"></i>
+                Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <h2>Cars for those who have courage</h2>
+      </div>
+
+      <!-- Land Rover Defender -->
+      <div class="col-12 col-md-6 cars-item">
+        <div class="cars-item__content">
+          <div class="container-hover">
+            <img src="./img/cars/land-rover.jpg" class="cars-item__img" alt="">
+
+            <!-- trigger modal -->
+            <div class="plus" data-toggle="modal" data-target="#rover">
+              <i class="fas fa-car-side"></i>
+            </div>
+          </div>
+
+          <div class="cars-item__text">
+            <h4>Land Rover Defender</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum, qui eligendi nesciunt voluptas
+              accusantium expedita at. Debitis, nisi libero.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL card 1-->
+      <div class="modal fade" id="rover" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- modal-body -->
+            <div class="modal-body modal-body-scroll">
+              <div class="container p-5">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="section-title text-center mb-4">Land Rover Defender</h3>
+                  </div>
+
+                  <div class="col-12">
+                    <img src="./img/cars/land-rover-inside.jpg" alt="..." width="100%" class="modal-pic mb-4">
+                  </div>
+
+                  <div class="col-12 text-left mb-4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nisi dignissimos aut iste quam?
+                      Quod a ipsa sint beatae? Impedit.</p>
+
+                    <p><b><i class="fas fa-user-friends mr-3"></i> Number of people</b>: 2 </p>
+                    <p><b><i class="fas fa-arrows-alt-h mr-3"></i> Width</b>: xx m </p>
+                    <p><b><i class="fas fa-arrows-alt-v mr-3"></i> Height</b>: xx m </p>
+
+                    <p><b><i class="fas fa-shower mr-3"></i> Shower & WC</b>: no </p>
+
+                    <p><b><i class="fas fa-utensils mr-3"></i> Kitchen</b>: no </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- modal-footer -->
+            <div class="modal-footer justify-content-center">
+              <button type="button" data-dismiss="modal" class="button border-0"><i class="fas fa-times mr-2"></i>
+                Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toyota Land Cruiser -->
+      <div class="col-12 col-md-6 cars-item">
+        <div class="cars-item__content">
+          <div class="container-hover">
+            <img src="./img/cars/toyota-cruiser.jpg" class="cars-item__img" alt="">
+
+            <!-- trigger modal -->
+            <div class="plus" data-toggle="modal" data-target="#cruiser">
+              <i class="fas fa-car-side"></i>
+            </div>
+          </div>
+
+          <div class="cars-item__text">
+            <h4>Toyota Land Cruiser 70</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum, qui eligendi nesciunt voluptas
+              accusantium expedita at. Debitis, nisi libero.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL card 2-->
+      <div class="modal fade" id="cruiser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- modal-body -->
+            <div class="modal-body modal-body-scroll">
+              <div class="container p-5">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="section-title text-center mb-4">Toyota Land Cruiser</h3>
+                  </div>
+
+                  <div class="col-12">
+                    <img src="./img/cars/toyota-cruiser-inside.jpg" alt="..." width="100%" class="modal-pic mb-4">
+                  </div>
+
+                  <div class="col-12 text-left mb-4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nisi dignissimos aut iste quam?
+                      Quod a ipsa sint beatae? Impedit.</p>
+
+                    <p><b><i class="fas fa-user-friends mr-3"></i> Number of people</b>: 2 </p>
+                    <p><b><i class="fas fa-arrows-alt-h mr-3"></i> Width</b>: xx m </p>
+                    <p><b><i class="fas fa-arrows-alt-v mr-3"></i> Height</b>: xx m </p>
+
+                    <p><b><i class="fas fa-shower mr-3"></i> Shower & WC</b>: no </p>
+
+                    <p><b><i class="fas fa-utensils mr-3"></i> Kitchen</b>: no </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- modal-footer -->
+            <div class="modal-footer justify-content-center">
+              <button type="button" data-dismiss="modal" class="button border-0"><i class="fas fa-times mr-2"></i>
+                Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resources -->
+      <div class="col-12 cars-item">
+        <div class="cars-item__content cars-item__resources">
+          <div class="cars-item__text">
+            <h4>Rent a car</h4>
+
+            <ul>
+              <li>
+                <a href="https://www.hertz.de" target="_blank"><img src="./img/cars/herz.svg" alt=""
+                    class="cars-item__logo"></a>
+                <span>HERZ Auto Rent Company</span>
+              </li>
+
+              <li>
+                <a href="https://www.sixt.de" target="_blank"><img src="./img/cars/sixt.svg" alt=""
+                    class="cars-item__logo"></a>
+                <span>Sixt Auto Rent Company</span>
+              </li>
+
+              <li>
+                <a href="https://www.europcar.de" target="_blank"><img src="./img/cars/europcar.svg" alt=""
+                    class="cars-item__logo"></a>
+                <span>EuropCar Auto Rent Company</span>
+              </li>
+
+              <li>
+                <a href="https://www.erento.com/" target="_blank"><img src="./img/cars/erento.png" alt=""
+                    class="cars-item__logo"></a>
+                <span>eRento Auto Rent Company</span>
+              </li>
+
+              <li>
+                <a href="https://autovermietung.adac.de/wohnmobile/" target="_blank"><img src="./img/cars/adac.svg"
+                    alt="" class="cars-item__logo"></a>
+                <span>ADAC Trailer Rent</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- other resources -->
+          <div class="cars-item__text" style="height:auto">
+            <h4>Other resources</h4>
+
+            <ul>
+              <li>
+                <a href="https://www.airstream.com/travel-trailers"><img src="./img/cars/airstream.jpg" alt=""
+                    class="cars-item__logo"></a>
+                <span>AIRSTREAM is an American brand of caravan ("travel trailer")</span>
+              </li>
+
+              <li>
+                <a href="https://www.erwinhymergroup.com" target="_blank"><img src="./img/cars/hymer.png" alt=""
+                    class="cars-item__logo"></a>
+                <span>Hymer AG is one of the largest manufacturers of motorhomes and caravans in Europe</span>
+              </li>
+
+              <li>
+                <a href="https://www.mercedes-benz.de/vans" target="_blank"><img src="./img/cars/mersedes.svg" alt=""
+                    class="cars-item__logo"></a>
+                <span>Mercedes-Benz - the name says for itself</span>
+              </li>
+
+              <li>
+                <a href="https://nordstar.de/" target="_blank"><img src="./img/cars/nordstar.jpg" alt=""
+                    class="cars-item__logo"></a>
+                <span>Nordstar</span>
+              </li>
+
+              <li>
+                <a href="https://www.ford.de" target="_blank"><img src="./img/cars/ford.svg" alt=""
+                    class="cars-item__logo"></a>
+                <span>Ford - no need to explain</span>
+              </li>
+
+              <li>
+                <a href="https://www.opel.de/" target="_blank"><img src="./img/cars/opel.svg" alt=""
+                    class="cars-item__logo"></a>
+                <span>Opel - who doesn't know it?!</span>
+              </li>
+
+              <li>
+                <a href="https://www.opel.de/" target="_blank"><img src="./img/cars/knaus.svg" alt=""
+                    class="cars-item__logo"></a>
+                <span>Knaus Tabbert AG - Hersteller von Freizeitfahrzeugen</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+
+  <!-- footer -->
+  <div class="container-fluid footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 footer__icons">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.pinterest.de/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+
+        <div class="col-5 footer__content">
+          <h4>Car Travel</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, dolorum! Consequuntur, repellat
+            voluptatem molestias adipisci blanditiis cumque accusantium a ullam.</p>
+        </div>
+
+        <div class="col-5 col-md-4 footer__content">
+          <h4>Address</h4>
+          <p><b>Car travel</b></p>
+          <p>Str. Ulitsa 10</p>
+          <p>12345 Leipzig</p>
+          <p>Germany</p>
+        </div>
+
+        <div class="col-5 col-md-3 footer__content">
+          <h4>Contact</h4>
+          <p>+49 30 67 997-333</p>
+          <p>car_travel@travel.com</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-4 footer__extra">
+          <p>&copy 2020 - Leipzig, Germany</p>
+        </div>
+
+        <div class="col-12 col-md-8 footer__extra">
+          <a href="#">Impressum</a>
+          <a href="#">Data Protection</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Jobs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

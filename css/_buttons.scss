@@ -1,0 +1,110 @@
+//button video banner
+.box-1 {
+    @include flexBox(row, center, center);
+
+    .btn-video {
+        line-height: 50px;
+        height: 50px;
+        text-align: center;
+        width: 250px;
+        padding: 0;
+    }
+
+    .btn-video-style {
+        color: $text-color;
+        transition: all 0.3s;
+        position: relative;
+
+        transition: all 0.3s;
+        color: $text-color;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: bold;
+
+        &::before {
+            content: '';
+            @include boxPosition(absolute, 0, 0);
+            @include boxSize(100%, 100%);
+            z-index: 1;
+            opacity: 0;
+            transition: all 0.3s;
+            border-top-width: 1px;
+            border-bottom-width: 1px;
+            border-top-style: solid;
+            border-bottom-style: solid;
+            border-top-color: rgba(255, 255, 255, 0.5);
+            border-bottom-color: rgba(255, 255, 255, 0.5);
+            transform: scale(0.1, 1);
+        }
+
+        &:hover {
+            letter-spacing: 2px;
+            color: $nav-color-text;
+            text-decoration: none;
+        }
+
+        &:hover::before {
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+
+        &::after {
+            content: '';
+            @include boxPosition(absolute, 0, 0);
+            @include boxSize(100%, 100%);
+            z-index: 1;
+            transition: all 0.3s;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        &:hover::after {
+            opacity: 0;
+            transform: scale(0.1, 1);
+        }
+    }
+}
+
+//main button
+.button {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: $text-color;
+    text-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px black;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &:after {
+        content: '';
+        @include boxPosition(absolute, 0, 0);
+        @include boxSize(100%, 100%);
+        background-color: $button-bg;
+        border-radius: 10rem;
+        z-index: -2;
+    }
+
+    &:before {
+        content: '';
+        @include boxPosition(absolute, 0, 0);
+        @include boxSize(0, 100%);
+        background-color: darken($button-bg, 15%);
+        transition: all .3s;
+        border-radius: 10rem;
+        z-index: -1;
+    }
+
+    &:hover {
+        color: $text-color;
+        text-decoration: none;
+
+        &:before {
+            width: 100%;
+        }
+    }
+}

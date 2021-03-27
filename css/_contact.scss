@@ -1,0 +1,164 @@
+.contact-container {
+    @include background-img('../img/bg.jpg');
+    @include flexBox(row, center, center);
+
+    form {
+        @include background-img('../img/bg3.jpg');
+        box-shadow: 3px 3px 10px black;
+        padding: 30px 20px;
+        width: 90%;
+        margin: auto;
+
+        .contact-heading {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    
+        .contact-icons {
+            margin-bottom: 30px;
+            text-align: center;
+    
+            i {
+                font-size: 2rem;
+                margin-right: 20px;
+                color: #313918;
+            }
+        }
+    }
+}
+
+//fancy input
+.fancy-input {
+  padding: 60px 30px;
+  @include epic-sides();
+  text-align: center;
+  width: inherit;
+
+  @include desktop {
+      width: 70%;
+      margin: 0 auto;
+  }
+  
+  .input {
+    position: relative;
+    margin: 30px 10px;
+  }
+}
+
+.swing {
+  display: inline-block;
+  width: 90%;
+  padding: 10px 0 10px 15px;
+  color: darken($button-bg, 15%);
+  background: #dbdbab;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  text-indent: 35%;
+  transition: all .3s ease-in-out;
+  
+  &::-webkit-input-placeholder {
+    color: darken($button-bg, 15%);
+    text-indent: 0;
+    font-weight: 300;
+  }
+
+  + label {
+    display: inline-block;
+    @include boxPosition(absolute, 0, 30px);
+    width: 30%;
+    padding: 10px 15px;
+    background: linear-gradient(to bottom right, #3B3328, #807F0C);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transform-origin: 2px 2px;
+    transform: rotate(0);
+    animation: swing-back .4s 1 ease-in-out;
+
+    @include tablet {
+        left: 45px;
+    }
+
+    @include desktop {
+        left: 50px;
+    }
+
+    span {
+        color: darken(red, 20%);
+    }
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0);
+  }
+  20% {
+    transform: rotate(116deg);
+  }
+  40% {
+    transform: rotate(60deg);
+  }
+  60% {
+    transform: rotate(98deg);
+  }
+  80% {
+    transform: rotate(76deg);
+  }
+  100% {
+    transform: rotate(82deg);
+  }
+}
+@keyframes swing-back {
+  0% {
+    transform: rotate(82deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.swing:focus,
+.swing:active {
+  color: darken($button-bg, 15%);
+  text-indent: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  
+  &::-webkit-input-placeholder {
+    color: darken($button-bg, 15%);
+  }
+  + label {
+    animation: swing 1.4s 1 ease-in-out;
+    transform: rotate(82deg);
+  }
+}
+
+label[for="message"] {
+    display: block;
+}
+
+button[type="submit"] {
+    width: 50%;
+    border: none;
+}
+
+input{
+    box-shadow: 3px 3px 5px black;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    box-shadow: none;
+}
+
+textarea {
+    background: #dbdbab;
+    @include tablet {
+        width: 90%;
+    }
+}
+
+.error {
+  color: red;
+  background: rgba(255, 255, 255, .3);
+}
